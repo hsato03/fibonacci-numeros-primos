@@ -1,9 +1,7 @@
 public class FibonacciLinear {
 
     public static Integer fibo(Integer N) {
-        if (N < 0) {
-            throw new IllegalArgumentException("N deve ser maior ou igual a 0");
-        } else if (N <= 1) {
+        if (N <= 1) {
             return N;
         }
 

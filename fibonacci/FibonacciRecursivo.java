@@ -7,10 +7,6 @@ public class FibonacciRecursivo {
     private static final Map<Integer, Integer> cache = new ConcurrentHashMap<>();
 
     public static Integer fibo(Integer N) {
-        if (N < 0) {
-            throw new IllegalArgumentException("N deve ser maior ou igual a 0");
-        }
-
         if (N <= 1) {
             return N;
         }
